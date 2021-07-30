@@ -12,3 +12,9 @@ document.getElementById("app").innerHTML = `
 console.log("script is working");
 prompt("Enter name:");
 alert("invalid user");
+
+var btntranslate = document.querySelector("#btn-translate");
+console.log(btntranslate);
+btntranslate.addEventListener("click", function clickEventHandler() {
+  console.log("button clicked!");
+});
