@@ -10,11 +10,14 @@ document.getElementById("app").innerHTML = `
 `;
 
 console.log("script is working");
-prompt("Enter name:");
-alert("invalid user");
 
 var btntranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+
 console.log(btntranslate);
+console.log(txtInput);
+
 btntranslate.addEventListener("click", function clickEventHandler() {
   console.log("button clicked!");
+  console.log("Input:", txtInput.value);
 });
