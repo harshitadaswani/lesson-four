@@ -13,11 +13,17 @@ console.log("script is working");
 
 var btntranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
 
 console.log(btntranslate);
 console.log(txtInput);
 
-btntranslate.addEventListener("click", function clickEventHandler() {
+function clickEventHandler() {
   console.log("button clicked!");
   console.log("Input:", txtInput.value);
-});
+  //outputDiv.innerText = "hello" + txtInput.value;
+}
+
+btntranslate.addEventListener("click", clickEventHandler());
+
+// outputDiv.innerText = "hello";
